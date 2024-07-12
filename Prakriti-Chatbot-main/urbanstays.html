@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="anygames.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" media="screen and (max-width:1170px)" href="phone.css">
+</head>
+<script>
+
+function display()
+{
+var name=document.getElementById("name").value; 
+var email=document.getElementById("email").value; 
+var loc=document.getElementById("location");
+var loc_val=loc.options[loc.selectedIndex].value;
+
+document.getElementById("p").innerHTML="<h2><br>The following are the details provided by you</h2>Name:"+name+"<br><br>Location:"+loc_val+"<br><br>Email:"+email;
+
+}
+</script>
+<body>
+    <nav id="navbar">
+        <div id="logo">
+                 <img src="tree.png"  alt="not available" >
+        </div>
+        <ul>
+            <li class="item"><a href="#home">Home</a></li>
+            <li class="item"><a href="#services-container">About Us</a></li>
+           
+        </ul>
+    </nav>
+
+    <section id="home">
+        <h1 class="h-primary ">EXPLORE YOUR PRAKRITI TYPE WITH OUR CHATBOT</h1>
+        
+        <button class="btn"> <a href="templates/index.html" style="text-decoration: none; color: black;">Explore</button></a>
+    </section>
+
+    <section id="services-container">
+        <h1 class="h-primary section">About Us</h1>
+        <div id="services">
+            <div class="box">
+              
+                <P>Prakruti is a fundamental concept in Indian philosophy and Ayurvedic medicine, representing the innate, natural constitution and balance of an individual's physical and mental characteristics. It is believed to be determined at the time of conception and remains largely constant throughout a person's life. Prakruti is a unique combination of the three doshas—Vata, Pitta, and Kapha—which are dynamic energies governing various bodily functions and traits. Understanding one's prakruti is crucial in Ayurveda, as it guides personalized health and wellness practices, including diet, lifestyle, and therapeutic interventions, to maintain harmony and prevent imbalances that may lead to illness. By recognizing and harmonizing with their prakruti, individuals can optimize their overall well-being and vitality.</P>
+            </div>
+            
+            
+        </div>
+    </section>
+   
+
+    <footer>
+        <div class="center">
+            Copyright &copy;www.AIchatbot.com. All rights reserved
+        </div>
+    </footer>
+   <a href="/index.html" target="_parent">chatbox</a>
+</body>
+</html>
